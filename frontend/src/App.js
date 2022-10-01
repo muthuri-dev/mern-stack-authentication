@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <Switch>
         <Routes>
-          <Route path='/' element={<Register/>}/>
+          <Route exact path='/' element={<Register/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/home' element={<Home/>}/>
+          <Route exact path='/home' element={<Home/>}/>
         </Routes>
       </Switch>
     </div>
