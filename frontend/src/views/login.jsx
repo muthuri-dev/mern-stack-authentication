@@ -25,13 +25,11 @@ const Login = () => {
         axios.post('http://localhost:8081/login',newlogin)
         .then((respond)=>{
             if(respond.status===200){
-                //alert('Login in successful');
-               // navigate.replace('/home');
-               //navigate('/home',{replce:true});
-               navigate("/home")
+                alert('Login in successful');
+               navigate("/home");
             }else{
-                alert('Check your entities');
-                console.log(respond);
+                alert('Check your entilies');
+                console.log(respond)
             }
         });
     }

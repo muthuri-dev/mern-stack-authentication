@@ -68,9 +68,6 @@ app.post('/login',async function(req,res){
         password:req.body.pass
     });
     if(user){
-        const token=jwt.sign({
-            email:req.body.email
-        },'secrete12345');
         return res.json({status:'ok',user:true});
     }else{
         return res.json({status:'error',user:false});
